@@ -1,10 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 @import url('https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');
 
-*,
-*::before,
-*::after {
-	box-sizing: border-box;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 html {
@@ -19,7 +17,6 @@ html {
     --color-light-grey: #f3f3f3;
     --color-dark-grey: #353535;
     --text-color: var(--color-black);
-
     --font-family-base: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-family-title: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
@@ -37,25 +34,24 @@ html {
     --font-weight-bold: 700;
 
     --section-header-align: center;
-
     --section-tagline-transform: uppercase;
 
     --section-title-margin: 0;
+
     --section-title-color: var(--color-black);
-
-	--section-padding: 5rem 0;
-	--section-header-padding: 0 0 3rem;
-	--section-body-padding: 0 0 3rem;
-	--section-footer-padding: 3rem 0 0;
-	--section-footer-align: center;
-	--footer-padding: 5rem 0 1rem;
-
-	--nav-item-font-family: var(--font-family-title);
+    --section-padding: 5rem 0;
+    --section-header-padding: 0 0 3rem;
+    --section-body-padding: 0 0 3rem;
+    --section-footer-padding: 3rem 0 0;
+    --section-footer-align: center;
+    --footer-padding: 5rem 0 1rem;
+	
+    --nav-item-font-family: var(--font-family-title);
     --nav-item-font-weight: var(--font-weight-bold);
     --nav-item-font-size: var(--font-size-medium);
-    --nav-item-letter-spacing: 4%;
+    --nav-item-letter-spacing: 0.4rem;
     --nav-item-display: inline-block;
-    --nav-item-margin: 3rem 0 0;
+    --nav-item-margin: 3rem 0 0 0;
     --nav-item-link-hover: var(--color-primary);
 }
 
@@ -76,7 +72,6 @@ a:visited {
     font-style: italic;
 }
 
-
 a:hover {
     text-decoration: underline;
 }
@@ -86,54 +81,50 @@ a:active {
 }
 
 .section {
-	padding: var(--section-padding);
+    padding: var(--section-padding);
 }
 
 .section-header {
-	padding: var(--section-header-padding);
+    padding: var(--section-header-padding);
     text-align: var(--section-header-align);
 }
 
 .section-body {
-	padding: var(--section-body-padding);
+    padding: var(--section-body-padding);
 }
 
 .section-footer {
-	padding: var(--section-footer-padding);
-	text-align: var(--section-footer-align);
+    padding: var(--section-footer-padding);
+    text-align: var(--section-footer-align);
 }
 
-.footer {
-	padding: var(--footer-padding);
+.nav .nav-item {
+    font-family: var(--nav-item-font-family);
+    font-weight: var(--nav-item-font-weight);
+    font-size: var(--nav-item-font-size);
+    letter-spacing: var(--nav-item-letter-spacing);
+    display: var(--nav-item-display);
+    margin: var(--nav-item-margin);
+}
+
+.nav .nav-link {
+    display: block;
+    padding: 0.5rem 1rem;
+}
+
+.nav .nav-link:hover {
+    color: var(--nav-item-link-hover);
 }
 
 .navbar-menu {
-	float: right;
+    float: right;
 }
 
-nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	text-align: center;
-}
-
-nav .nav-item {
-	font-family: var(--nav-item-font-family);
-	font-weight: var(--nav-item-font-weight);
-	font-size: var(--nav-item-font-size);
-	letter-spacing: var(--nav-item-letter-spacing);
-	display: var(--nav-item-display);
-	margin: var(--nav-item-margin);
-}
-
-nav .nav-link {
-	display: block;
-	padding: 0.5rem 1rem;
-}
-
-nav .nav-link:hover {
-	color: var(--nav-item-link-hover);
+.nav {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
 }
 
 .section-title {
@@ -153,14 +144,18 @@ nav .nav-link:hover {
 }
 
 .container {
-	width: 960px;
-	margin-left: auto;
-	margin-right: auto;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
+}
+
+.footer {
+    padding: var(--footer-padding);
 }
 
 .visually-hidden {

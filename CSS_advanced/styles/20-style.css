@@ -100,6 +100,19 @@ a:active {
     text-align: var(--section-footer-align);
 }
 
+[class^="col-"] {
+    float: left;
+    padding: 0.5rem;
+}
+
+.col-1-3 {
+    width: 33.33%;
+}
+
+.col-1-2 {
+    width: 50%;
+}
+
 .nav .nav-item {
     font-family: var(--nav-item-font-family);
     font-weight: var(--nav-item-font-weight);
@@ -143,6 +156,19 @@ a:active {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
     color: var(--color-primary);
+    margin: var(--section-tagline-margin);
+}
+
+.row {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .container {
@@ -160,34 +186,19 @@ h1, h2, h3, h4, h5, h6 {
     padding: var(--footer-padding);
 }
 
-.visually-hidden {
-    display: none;
-}
-
-ul.row {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.col-1-3 {
-	width: 33%;
-	float: left;
-	padding: 0.5rem;
-}
-
-.col-1-2 {
-	width: 50%;
-	float: left;
-	padding: 0.5rem;
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
 .footer-copyright {
-	margin: 0;
-	font-size: var(--font-size-small);
-	color: var(--text-color);
+    margin: 0;
+    font-size: var(--font-size-small);
+    color: var(--text-color);
 }
 
-ul.footer {
-	text-align: right;
+.visually-hidden {
+    display: none;
 }
